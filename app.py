@@ -39,7 +39,7 @@ app.ctx.render_template = render_template
 
 @app.listener("before_server_start")
 async def init(app, loop):
-    app.ctx.db = AsyncIOMotorClient(MONGO_URI).modmail_bot
+    app.ctx.db = AsyncIOMotorClient(MONGO_URI).modmail_ru
 
 
 @app.exception(NotFound)
